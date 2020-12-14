@@ -32,8 +32,7 @@ Use modules (imports/exports) where you think they are appropriate.
 
 ## Submission
 
--   Create a folder called your-name-js2-ca-resit-1, e.g. mary-smith-js2-ca-resit-1
--   Add all your code to this folder, zip the folder and submit the zip file
+-  Submit the link to your repo on Moodle
 
 ## Example
 
