@@ -1,39 +1,54 @@
 # JavaScript 2 Resit 1
 
-## Brief
+## Goal
 
-There is an example solution as a gif at the end of this README. The CSS and HTML from the example below has been provided, though you may style the assignment any way you wish.
+To apply knowledge of JavaScript techniques to implement the front-end functionality for an ecommerce application.
+
+## API
+
+The API you are using for this project can be found [here](https://dummyjson.com/docs).
+
+This a testing API, so POST, PUT, DELETE requests will not have an affect on the data. Appropriate messages should be displayed after the requests and errors should be catered for (not just consoled logged).
 
 Use modules (imports/exports) where you think they are appropriate.
 
-### Home page
+## Brief
 
--   Loop through the array of ice creams in `js/data/ice-creams.js` and create HTML for each that displays the name, flavours and price.
--   Each item should have a button or icon that adds or removes the ice cream from an array in local storage.
--   The button or icon should indicate whether the ice cream is in local storage or not.
+The project is an ecommerce site, with the required pages listed below. The frontend should be attractive and responsive but can be built with standard Booststrap or Tailwind classes.
 
-### Cart page
+Using the provided API and API documentation, create a functioning user interface that allows for viewing, posting, editing and deleting products.
 
--   Retrieve the array from local storage and create HTML for each that displays the name and price.
--   Each item should have a button or icon that removes the ice cream from the local storage array and rebuilds the HTML. Ask the user for confirmation before removing the ice cream.
--   Display the total number of items in the array.
--   Display the sum of all the prices in the array.
--   Include a button that clears the array and removes all items in the HTML. Ask the user for confirmation before peforming this action.
+You will need to make use of GET, POST, PUT, and DELETE HTTP methods.
 
-## Marking rubric
+Use localStorage for storing the token returned from the login API call.
 
--   Home page: Creating HTML for each ice cream in the `js/data/ice-creams.js` array - 1
--   Home page: Add and removing from cart array in local storage and changing the button/icon style accordingly - 2.5
--   Cart page: Creating HTML for each ice cream in the local storage array and displaying the item total - 1
--   Cart page: Removing item from local storage array and rebuilding the HTML - 3
--   Cart page: Clear button functionality (clearing the array and rebuilding the HTML) - 1
--   Cart page: Price total - 1
--   Code is properly formatted and arranged and variables and functions are appropriately named - 0.5
+A finished project fulfils the requirements below with an easy to use and error-free user interface.
 
-## Submission
+## Required features
 
--  Submit the link to your repo on Moodle
+The following user stories are required for a passing submission:
 
-## Example
+- User can login with one of the user email and password combinations listed [here](https://dummyjson.com/docs/users). (There is no registration functionality)
+- User can view a list of products
+- User can view a single product fetched by id
+- User can search for a product
+- User can create a post content item
+- User can update a post content item
+- User can delete a post content item
+- Only logged in users can use the create, update and delete functionality
+- If a user is logged in and tries to access the login page, they should be redirected to the home page
 
-<img src="example.gif" />
+## Development process
+
+1. Create a js2 branch from the default master or main branch.
+2. You may use either Trello or GitHub Projects to manage your development tasks. If you are using Trello, please make sure that your board is public and that a link is provided in your readme.md file.
+3. Review the API documentation
+4. Plan your approach, desired features and work strategy.
+5. Implement the required features as per your work plan.
+6. Open a Pull Request from js2 into the default branch and deliver the link to this PR in Moodle.
+
+## Restrictions
+
+- Required functionality must be implemented in original, pure JavaScript.
+- A CSS Framework may be used to build the application UI.
+- A .gitignore file must be provided including node_modules. This folder must be untracked.
