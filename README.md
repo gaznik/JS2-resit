@@ -28,7 +28,7 @@ A finished project fulfils the requirements below with an easy to use and error-
 
 The following user stories are required for a passing submission:
 
-- User can login with one of the user email and password combinations listed [here](https://dummyjson.com/docs/users). (There is no registration functionality)
+- User can login with one of the user email and password combinations returned from [this endpoint](https://dummyjson.com/users). The first user can also be found [here](https://dummyjson.com/docs/users) - click _Show ouput_. The login endpoint is demonstrated [here](https://dummyjson.com/docs/auth).
 - User can view a list of products
 - User can view a single product fetched by id
 - User can search for a product
@@ -38,11 +38,15 @@ The following user stories are required for a passing submission:
 - Only logged in users can use the create, update and delete functionality
 - If a user is logged in and tries to access the login page, they should be redirected to the home page
 
+The example code snippets use the `then`/`catch` syntax but consider using `async`/`await` for better readability.
+
+Note: There is no registration functionality.
+
 ## Development process
 
 1. Create a js2 branch from the default master or main branch.
 2. You may use either Trello or GitHub Projects to manage your development tasks. If you are using Trello, please make sure that your board is public and that a link is provided in your readme.md file.
-3. Review the API documentation
+3. Review the API documentation.
 4. Plan your approach, desired features and work strategy.
 5. Implement the required features as per your work plan.
 6. Open a Pull Request from js2 into the default branch and deliver the link to this PR in Moodle.
