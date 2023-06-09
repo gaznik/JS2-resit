@@ -8,7 +8,7 @@ To apply knowledge of JavaScript techniques to implement the front-end functiona
 
 The API you are using for this project can be found [here](https://dummyjson.com/docs).
 
-This a testing API, so POST, PUT, DELETE requests will not have an affect on the data. Appropriate messages should be displayed after the requests and errors should be catered for (not just consoled logged).
+This a testing API, so POST, PUT, DELETE requests will not have an affect on the data. Appropriate messages should be displayed after the requests and errors should be catered for (not just console logged).
 
 Use modules (imports/exports) where you think they are appropriate.
 
