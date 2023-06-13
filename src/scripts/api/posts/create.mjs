@@ -1,8 +1,7 @@
 import { API_URL_CREATE } from "../apiURL.mjs";
-import { fetchToken } from "../fetchToken.mjs";
 
 // Event listener to the submit button
-document.getElementById('submitButton').addEventListener('click', postData);
+document.getElementById('submitBtn').addEventListener('click', postData);
 
 // Prevent the default form submission 
 async function postData(event) {
