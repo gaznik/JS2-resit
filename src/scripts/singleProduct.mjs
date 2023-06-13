@@ -1,4 +1,4 @@
-import * as postMethods from "./api/posts/index.mjs";
+import * as postMethods from "./api/posts/read.mjs";
 
 const resultContainer = document.querySelector(".resultContainer");
 const queryString = document.location.search;
