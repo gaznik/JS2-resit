@@ -1,15 +1,31 @@
-import { API_URL_PRODUCTS } from "../apiURL.mjs";
+import { API_URL_CREATE } from "../apiURL.mjs";
 import { fetchToken } from "../fetchToken.mjs";
 
+// Event listener to the submit button
+document.getElementById('submitButton').addEventListener('click', postData);
 
-export async function createPost(postData) {
-    const createPostURL = API_URL_PRODUCTS;
+// Prevent the default form submission 
+async function postData(event) {
+  event.preventDefault(); // Prevent the form from being submitted
+
+  try {
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+    const media = document.getElementById('media').value;
     
-    const response = await fetchToken(createPostURL, {
-        method: "post",
-        body: JSON.stringify(postData)
+    const response = await fetch(API_URL_CREATE, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        title,
+        description,
+        media
+      })
     });
 
-    return await response.json();
-};
-
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <script src="/src/scripts/api/posts/create.mjs" defer type="module"></script>
+    <script src="/src/scripts/eventHandlers/createPost.mjs" defer type="module"></script>
+    <title>Create post</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-7 col-lg-5 mt-5">
+
+
+
+          <form action="######" id="createPost">
+            <h1 class="h3 mb-3 fw-normal">Create post</h1>
+
+            <div class="form-floating mb-3">
+                <input name="title" id="title" class="form-control" required>
+                <label for="floatingInput">Title</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <textarea name="body" id="description" class="form-control" required></textarea>
+                <label for="floatingInput">Body</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="url" id="media" name="media" class="form-control">
+                <label for="floatingInput">Media</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" id="submitButton" type="submit">Post</button>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
