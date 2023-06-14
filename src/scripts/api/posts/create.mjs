@@ -1,4 +1,11 @@
 import { API_URL_CREATE } from "../apiURL.mjs";
+import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+const isLoggedIn = userIsLoggedIn();
+
+if (!isLoggedIn) {
+    alert("Please log in to create a post.");
+    window.location.href = "login.html"; // Redirect to login page
+}
 
 // Event listener to the submit button
 document.getElementById('submitBtn').addEventListener('click', postData);
@@ -11,7 +18,7 @@ async function postData(event) {
     const title = document.getElementById('title').value;
     const description = document.getElementById('description').value;
     const media = document.getElementById('media').value;
-    
+
     const response = await fetch(API_URL_CREATE, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

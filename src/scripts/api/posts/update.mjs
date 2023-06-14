@@ -1,3 +1,10 @@
+import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+const isLoggedIn = userIsLoggedIn();
+
+if (!isLoggedIn) {
+    alert("Please log in to edit a post.");
+    window.location.href = "login.html"; // Redirect to login page
+}
 // Function to fetch the current title of the API item
 async function fetchProductTitle(id) {
     try {
