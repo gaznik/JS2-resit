@@ -21,7 +21,7 @@ async function fetchProduct() {
         document.getElementById('product-name').innerText = product.title;
         document.getElementById('product-description').innerText = product.description;
         document.getElementById('product-price').innerText = `$${product.price}`;
-        document.getElementById('product-img').innerText = product.images;
+      
         
         if (product.images && product.images.length > 0) {
             product.images.forEach((image) => {
@@ -38,3 +38,8 @@ async function fetchProduct() {
 }
 
 fetchProduct();
+
+const editButton = document.getElementById("updateBtn");
+editButton.addEventListener('click', ()=> {
+    window.location.href = `update.html?id=${id}`;
+})

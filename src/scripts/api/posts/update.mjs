@@ -1,15 +1,49 @@
-import { API_URL_PRODUCTS } from "../apiURL.mjs";
-import { fetchToken } from "../fetchToken.mjs";
-
-
-
-export async function updatePost(postData) {
-    const updatePostURL = `${API_URL_PRODUCTS}/${postData.id}`;
-    
-    const response = await fetchToken(updatePostURL, {
-        method: "put",
-        body: JSON.stringify(postData)
-    });
-
-    return await response.json();
-};
+// Function to fetch the current title of the API item
+async function fetchProductTitle(id) {
+    try {
+      const response = await fetch(`https://dummyjson.com/products/${id}`);
+      const data = await response.json();
+      return data.title;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+  // Function to update the product by ID
+  async function updateProductById(id, title) {
+    try {
+      const response = await fetch(`https://dummyjson.com/products/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title })
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+  // Populate form with current title
+  window.addEventListener('DOMContentLoaded', async () => {
+    const productIdInput = document.getElementById('productId');
+    const productTitleInput = document.getElementById('productTitle');
+  
+     // Extract the product ID from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
+    const productTitle = await fetchProductTitle(productId);
+  
+    productIdInput.value = productId;
+    productTitleInput.value = productTitle;
+  });
+  
+  // Event listener form to handle submission
+  document.getElementById('updateForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting and refreshing the page
+  
+    const productId = document.getElementById('productId').value;
+    const productTitle = document.getElementById('productTitle').value;
+  
+    updateProductById(productId, productTitle);
+  });
