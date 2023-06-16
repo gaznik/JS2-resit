@@ -10,18 +10,19 @@
   
     <title>Create post</title>
 </head>
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-    <span class="fs-4">Shoply</span>
-  </a>
-
-  <ul class="nav nav-pills">
-    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-  </ul>
-</header>
+<header class="p-3 text-bg-danger">
+  <div class="container">
+    <nav class="navbar">
+      <input type="checkbox" id="burger-toggle">
+      <label class="burger-label" for="burger-toggle">&#9776;</label>
+      <ul class="links">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li class="active"><a href="create.html" aria-current="page">Create post</a></li>
+      </ul>
+    </nav>
+  </div>
+</header> 
 <body>
   <main>
     <div class="container">
