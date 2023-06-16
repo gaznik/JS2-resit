@@ -31,6 +31,7 @@ async function postData(event) {
 
     const data = await response.json();
     console.log(data);
+    alert("Post has been created")
   } catch (error) {
     console.error(error);
   }
