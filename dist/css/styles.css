@@ -11858,5 +11858,84 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2em;
+  border: 1px solid black;
+}
+
+nav label {
+  display: none;
+}
+
+nav input[type=checkbox] {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    color: #333;
+  }
+  nav label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    z-index: 1;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  nav input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  .active {
+    color: black;
+  }
+}
+.burger-label {
+  font-size: 3em;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#searchButton {
+  width: 10em;
+}
+
+#searchInput {
+  width: 30em;
+}
 
 /*# sourceMappingURL=styles.css.map */
