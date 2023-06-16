@@ -27,6 +27,7 @@ async function deleteProductById(id) {
     const confirmation = confirm('Are you sure you want to delete this product?');
     if (confirmation) {
       await deleteProductById(productId);
+      alert("Post has been deleted")
       // Redirect after post is deleted
       window.location.href = '/products.html'; 
     }}
