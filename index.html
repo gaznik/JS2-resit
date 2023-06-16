@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/styles.css">
-    <script src="/src/scripts/redirect.mjs" defer type="module"></script>
     <title>Shopping site | Home page</title>
 
     
@@ -14,13 +13,22 @@
 
 <body>
   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-10 col-md-7 col-lg-5 mt-5">
-      <h3>Redirecting</h3>
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Welcome to ShopWithUs</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">This is an online shop where you will find good things for a small price. You can view items for sale and post your own item. Enjoy!</p> 
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="products.html" class="btn btn-outline-danger btn-lg px-4">View products</a>
+          <a href="login.html" class="btn btn-outline-danger btn-lg px-4">Log In</a>
+          <a href="create.html" class="btn btn-outline-danger btn-lg px-4">Create a post</a>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
       </div>
     </div>
-  </div>
 </main>
 
 </body>
