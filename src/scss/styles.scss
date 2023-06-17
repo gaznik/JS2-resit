@@ -70,6 +70,7 @@ nav label {
     .active{
         color: black;
       }
+
   }
 
   .burger-label {
@@ -81,7 +82,10 @@ nav label {
   }
 
   #searchButton {
-    width: 7em;
+    max-width: 5em;
+    max-height: 3em;
+    margin: 0.5em;
+
   }
   #searchInput {
     width: 30em;

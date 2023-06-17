@@ -11931,7 +11931,9 @@ nav a {
 }
 
 #searchButton {
-  width: 7em;
+  max-width: 5em;
+  max-height: 3em;
+  margin: 0.5em;
 }
 
 #searchInput {
