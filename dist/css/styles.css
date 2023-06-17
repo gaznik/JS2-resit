@@ -11971,4 +11971,12 @@ h1, .h1 {
   padding: 2em;
 }
 
+#error-message {
+  display: none;
+  background-color: #333;
+  color: yellow;
+  padding: 1em;
+  font-style: oblique;
+}
+
 /*# sourceMappingURL=styles.css.map */
