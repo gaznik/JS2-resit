@@ -1,5 +1,7 @@
 import { API_URL_LOGIN } from "../apiURL.mjs";
 import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+import { displayErrorMessage } from "../../errorMessage.mjs";
+
 const isLoggedIn = userIsLoggedIn();
 if(isLoggedIn){
   window.location.href = "products.html"; // Redirect to login page if user is already logged inn and tries accessing login page
@@ -27,13 +29,17 @@ document.querySelector("#login").addEventListener("submit", async (event) => {
     console.log(data);
 
     // Save the token to localStorage
-    localStorage.setItem("token", data.token);
+    if (data.token) {
+      localStorage.setItem("token", data.token);
 
-    alert("Login successful");
-    window.location.href = "products.html"; // Redirect to product page after logging in
-    
-
+      alert("Login successful");
+      window.location.href = "products.html"; // Redirect to product page after logging in
+    } else {
+      alert("Username or password incorrect");
+    }
   } catch (error) {
     console.error('An error occurred during login', error);
+    displayErrorMessage("Something went wrong during login. Error: " + error);
   }
 });
+
