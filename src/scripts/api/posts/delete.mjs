@@ -1,4 +1,5 @@
 import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+import { displayErrorMessage } from "../../errorMessage.mjs";
 const isLoggedIn = userIsLoggedIn();
 
 async function deleteProductById(id) {
@@ -9,7 +10,8 @@ async function deleteProductById(id) {
       const data = await response.json();
       console.log(data);
     } catch (error) {
-      console.error(error);
+      console.error("An error occurred:", error);
+      displayErrorMessage("Something went wrong. Error: " + error);
     }
   }
   

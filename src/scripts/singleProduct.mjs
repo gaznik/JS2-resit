@@ -1,4 +1,5 @@
 import * as postMethods from "./api/posts/read.mjs";
+import { displayErrorMessage } from "./errorMessage.mjs";
 
 const resultContainer = document.querySelector(".resultContainer");
 const queryString = document.location.search;
@@ -33,7 +34,8 @@ async function fetchProduct() {
         }
 
     } catch (error) {
-        console.error(error);
+        console.error("An error occurred:", error);
+        displayErrorMessage("Something went wrong. Error: " + error);
     }
 }
 

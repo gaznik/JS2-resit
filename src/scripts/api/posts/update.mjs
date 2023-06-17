@@ -1,4 +1,5 @@
 import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+import { displayErrorMessage } from "../../errorMessage.mjs";
 const isLoggedIn = userIsLoggedIn();
 
 if (!isLoggedIn) {
@@ -28,7 +29,8 @@ async function fetchProductTitle(id) {
       console.log(data);
       alert("Post has been updated")
     } catch (error) {
-      console.error(error);
+      console.error("An error occurred:", error);
+      displayErrorMessage("Something went wrong. Error: " + error);
     }
   }
   

@@ -1,5 +1,7 @@
 import { API_URL_CREATE } from "../apiURL.mjs";
 import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
+import { displayErrorMessage } from "../../errorMessage.mjs";
+
 const isLoggedIn = userIsLoggedIn();
 
 if (!isLoggedIn) {
@@ -33,6 +35,7 @@ async function postData(event) {
     console.log(data);
     alert("Post has been created")
   } catch (error) {
-    console.error(error);
+    console.error("An error occurred:", error);
+    displayErrorMessage("Something went wrong. Error: " + error);
   }
 }
