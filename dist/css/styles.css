@@ -11953,4 +11953,16 @@ nav a {
   color: #333;
 }
 
+#product-price {
+  font-size: 1.5em;
+}
+
+#updateBtn {
+  margin: 0 1em 1em 0;
+}
+
+#deleteBtn {
+  margin-bottom: 1em;
+}
+
 /*# sourceMappingURL=styles.css.map */
