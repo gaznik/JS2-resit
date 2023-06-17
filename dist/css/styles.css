@@ -11967,4 +11967,8 @@ nav a {
   margin-bottom: 1em;
 }
 
+h1, .h1 {
+  padding: 2em;
+}
+
 /*# sourceMappingURL=styles.css.map */
