@@ -81,9 +81,23 @@ nav label {
   }
 
   #searchButton {
-    width: 10em;
+    width: 7em;
   }
   #searchInput {
     width: 30em;
   }
 
+  .productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #products {
+    max-width: 30em;
+  }
+
+  .post {
+    text-decoration: none;
+    color: #333;
+  }

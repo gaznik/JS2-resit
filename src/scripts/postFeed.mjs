@@ -37,31 +37,30 @@ async function postFeed() {
   
   function createPostElement(post) {
     const postElement = document.createElement("div");
-    postElement.classList.add("post");
   
     const postTitle = document.createElement("h3");
     postTitle.textContent = post.title;
 
-      // Create anchor tag
-  const productLink = document.createElement("a");
-  productLink.href = `singleProduct.html?id=${post.id}`; // Replace "product.html" with the actual HTML page name
-  productLink.textContent = "more info";
-
-  // Append the anchor tag to the postTitle element
-  postTitle.appendChild(productLink);
-  
     const postDescription = document.createElement("p");
     postDescription.textContent = post.description;
 
     const postThumbnail = document.createElement('img');
     postThumbnail.src = post.thumbnail;
     postThumbnail.alt = `Image from ${post.title}`;
+
+     // Create anchor tag to the singleProduct page
+    const productLink = document.createElement("a");
+    productLink.href = `singleProduct.html?id=${post.id}`; 
+    productLink.classList.add("post");
+         
         
     
+  // Append the anchor tag to the post element
+    productLink.appendChild(postTitle);
+    productLink.appendChild(postDescription);
+    productLink.appendChild(postThumbnail);
+    postElement.appendChild(productLink);
   
-    postElement.appendChild(postTitle);
-    postElement.appendChild(postDescription);
-    postElement.appendChild(postThumbnail);
   
     return postElement;
   }
