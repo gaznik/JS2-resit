@@ -11968,7 +11968,7 @@ nav a {
 }
 
 h1, .h1 {
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
 
 #error-message {

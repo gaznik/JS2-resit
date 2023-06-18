@@ -1,5 +1,5 @@
-import * as postMethods from "./api/posts/read.mjs";
 import { displayErrorMessage } from "./errorMessage.mjs";
+import { API_URL_PRODUCTS } from "./api/apiURL.mjs";
 
 const resultContainer = document.querySelector(".resultContainer");
 const queryString = document.location.search;
@@ -8,7 +8,7 @@ const id = params.get("id");
 
 
 
-const url = "https://dummyjson.com/products/" + id;
+const url = API_URL_PRODUCTS + id;
 
 async function fetchProduct() {
     try {
@@ -16,13 +16,11 @@ async function fetchProduct() {
         const response = await fetch(url);
         const product = await response.json();
 
-   
 
         // Populate the product data on the HTML page
         document.getElementById('product-name').innerText = product.title;
         document.getElementById('product-description').innerText = product.description;
         document.getElementById('product-price').innerText = `$${product.price}`;
-      
         
         if (product.images && product.images.length > 0) {
             product.images.forEach((image) => {
