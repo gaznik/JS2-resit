@@ -8,7 +8,6 @@ async function deleteProductById(id) {
         method: 'DELETE'
       });
       const data = await response.json();
-      console.log(data);
     } catch (error) {
       console.error("An error occurred:", error);
       displayErrorMessage("Something went wrong. Error: " + error);

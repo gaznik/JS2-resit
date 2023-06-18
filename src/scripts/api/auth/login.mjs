@@ -26,7 +26,7 @@ document.querySelector("#login").addEventListener("submit", async (event) => {
     });
 
     const data = await response.json();
-    console.log(data);
+    
 
     // Save the token to localStorage
     if (data.token) {

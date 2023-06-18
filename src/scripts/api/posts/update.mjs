@@ -26,7 +26,6 @@ async function fetchProductTitle(id) {
         body: JSON.stringify({ title })
       });
       const data = await response.json();
-      console.log(data);
       alert("Post has been updated")
     } catch (error) {
       console.error("An error occurred:", error);
