@@ -1,5 +1,9 @@
 # JavaScript 2 Resit 1
 
+1. npm init
+2. run build
+
+
 ## Goal
 
 To apply knowledge of JavaScript techniques to implement the front-end functionality for an ecommerce application.
