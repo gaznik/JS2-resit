@@ -1,5 +1,6 @@
 import { userIsLoggedIn } from "../userIsLoggedIn.mjs";
 import { displayErrorMessage } from "../../errorMessage.mjs";
+
 const isLoggedIn = userIsLoggedIn();
 
 if (!isLoggedIn) {
@@ -25,7 +26,6 @@ async function fetchProductTitle(id) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title })
       });
-      const data = await response.json();
       alert("Post has been updated")
     } catch (error) {
       console.error("An error occurred:", error);

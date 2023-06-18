@@ -7,7 +7,6 @@ async function deleteProductById(id) {
       const response = await fetch(`https://dummyjson.com/products/${id}`, {
         method: 'DELETE'
       });
-      const data = await response.json();
     } catch (error) {
       console.error("An error occurred:", error);
       displayErrorMessage("Something went wrong. Error: " + error);
