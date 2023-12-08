@@ -86,6 +86,5 @@ Reference any related issues if applicable.
 
 ## Contact
 
-[Email] (gazmendn93@gmail.com)
-[My LinkedIn page](https://www.linkedin.com/in/gazmend-nikqi-389266205/)
-[Discord] gazmendn
+Email: (gazmendn93@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/gazmend-nikqi-389266205/)
