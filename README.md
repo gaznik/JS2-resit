@@ -1,38 +1,17 @@
-# JavaScript 2 Resit 1
+# Your project title
 
-1. npm init
-2. run build
+![Screenshot of ShopWithUs homepage](/ShopWithUsScreenshot.png)
+
+This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
+
+## Description
+
+This project is an ecommerce website using dummyJSON API. This site has viewing, posting, editing and deleting products functionality. 
 
 
-## Goal
+Functionality/user stories:
 
-To apply knowledge of JavaScript techniques to implement the front-end functionality for an ecommerce application.
-
-## API
-
-The API you are using for this project can be found [here](https://dummyjson.com/docs).
-
-This a testing API, so POST, PUT, DELETE requests will not have an affect on the data. Appropriate messages should be displayed after the requests and errors should be catered for (not just console logged).
-
-Use modules (imports/exports) where you think they are appropriate.
-
-## Brief
-
-The project is an ecommerce site, with the required pages listed below. The frontend should be attractive and responsive but can be built with standard Booststrap or Tailwind classes.
-
-Using the provided API and API documentation, create a functioning user interface that allows for viewing, posting, editing and deleting products.
-
-You will need to make use of GET, POST, PUT, and DELETE HTTP methods.
-
-Use localStorage for storing the token returned from the login API call.
-
-A finished project fulfils the requirements below with an easy to use and error-free user interface.
-
-## Required features
-
-The following user stories are required for a passing submission:
-
-- User can login with one of the user email and password combinations returned from [this endpoint](https://dummyjson.com/users). The first user can also be found [here](https://dummyjson.com/docs/users) - click _Show ouput_. The login endpoint is demonstrated [here](https://dummyjson.com/docs/auth).
+- User can login with one of the user email and password combination from the dummyJSON api. 
 - User can view a list of products
 - User can view a single product fetched by id
 - User can search for a product
@@ -40,23 +19,70 @@ The following user stories are required for a passing submission:
 - User can update a post content item
 - User can delete a post content item
 - Only logged in users can use the create, update and delete functionality
-- If a user is logged in and tries to access the login page, they should be redirected to the home page
 
-The example code snippets use the `then`/`catch` syntax but consider using `async`/`await` for better readability.
+## Built With
+- [HTML5]
+- [CSS]
+- [Bootstrap](https://getbootstrap.com)
+- [JavaScript]
 
-Note: There is no registration functionality.
+## Getting Started
 
-## Development process
+### Installing
 
-1. Create a js2 branch from the default master or main branch.
-2. You may use either Trello or GitHub Projects to manage your development tasks. If you are using Trello, please make sure that your board is public and that a link is provided in your readme.md file.
-3. Review the API documentation.
-4. Plan your approach, desired features and work strategy.
-5. Implement the required features as per your work plan.
-6. Open a Pull Request from js2 into the default branch and deliver the link to this PR in Moodle.
+1. Clone the repo:
 
-## Restrictions
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
 
-- Required functionality must be implemented in original, pure JavaScript.
-- A CSS Framework may be used to build the application UI.
-- A .gitignore file must be provided including node_modules. This folder must be untracked.
+2. Install the dependencies:
+
+```
+npm install bootstrap
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run build
+```
+
+## Contributing
+You are more than welcome to contribute to this project. But please follow the guidelines:
+
+1. Fork the Repository:
+This creates a copy of the repository under your GitHub account.
+
+2. Clone Your Fork:
+Clone the forked repository to your local machine using git clone <forked_repo_URL>.
+
+3. Create a Branch:
+Create a new branch for your specific changes using git checkout -b your_branch_name.
+
+4. Make Changes:
+Make your desired changes to the codebase.
+
+5. Commit Changes:
+Commit your changes to your branch.
+
+6. Keep Your Fork Updated:
+Regularly sync your fork with the original repository to include any changes made to the main branch:
+
+7. Push Changes:
+Push your branch to your fork on GitHub.
+
+8. Create a Pull Request (PR):
+Go to your forked repository on GitHub and create a Pull Request.
+Provide a clear title and description explaining the changes made.
+Reference any related issues if applicable.
+
+9. Once your PR is approved, I will merge your changes into the main repository.
+
+## Contact
+
+[Email] (gazmendn93@gmail.com)
+[My LinkedIn page](https://www.linkedin.com/in/gazmend-nikqi-389266205/)
+[Discord] gazmendn
