@@ -1,6 +1,6 @@
 # Your project title
 
-![Screenshot of ShopWithUs homepage](/ShopWithUsScreenshot.png)
+![Screenshot of ShopWithUs homepage](/JS2/ShopWithUs-screenshot.png)
 
 This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
 
