@@ -5,7 +5,7 @@
 This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
 
 ## Deployed site
-https://js2--flourishing-gumdrop-fccfdf.netlify.app/
+[Netlify] (https://js2--flourishing-gumdrop-fccfdf.netlify.app/)
 
 ## Description
 
@@ -36,7 +36,7 @@ Functionality/user stories:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/gaznik/JS2-resit.git
 ```
 
 2. Install the dependencies:
