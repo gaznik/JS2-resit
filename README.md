@@ -4,6 +4,9 @@
 
 This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
 
+## Deployed site
+https://js2--flourishing-gumdrop-fccfdf.netlify.app/
+
 ## Description
 
 This project is an ecommerce website using dummyJSON API. This site has viewing, posting, editing and deleting products functionality. 
