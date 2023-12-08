@@ -1,6 +1,6 @@
 # ShopWithUs | E-commerce site
 
-![Screenshot of ShopWithUs homepage](/ShopWithUs-screenshot.png)
+![Screenshot of ShopWithUs homepage](https://leafy-torrone-c9e9ae.netlify.app/img/ShopWithUs.png)
 
 This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
 
