@@ -1,4 +1,4 @@
-# Your project title
+# ShopWithUs | E-commerce site
 
 ![Screenshot of ShopWithUs homepage](/ShopWithUs-screenshot.png)
 
