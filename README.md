@@ -5,7 +5,7 @@
 This is an e-commerce website build in relation to the JavaScript 2 resit exam from Noroff. 
 
 ## Deployed site
-Netlify website: (https://js2--flourishing-gumdrop-fccfdf.netlify.app/)
+Netlify website: https://js2--flourishing-gumdrop-fccfdf.netlify.app/
 
 ## Description
 
@@ -86,5 +86,5 @@ Reference any related issues if applicable.
 
 ## Contact
 
-Email: (gazmendn93@gmail.com)
+Email: gazmendn93@gmail.com |
 [LinkedIn](https://www.linkedin.com/in/gazmend-nikqi-389266205/)
